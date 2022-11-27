@@ -22,4 +22,10 @@ class BirdsController < ApplicationController
     end
   end
 
+  private
+
+  def birds_params
+    params.permit(:name, :species)
+  end
+
 end
